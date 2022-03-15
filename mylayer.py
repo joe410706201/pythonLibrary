@@ -143,27 +143,3 @@ class   NeuralNetwork:
     def train(self,rate):
         #trainning neural network 
         pass
-
-#test class 
-testnet = NeuralNetwork(4, 2, [5,2,3,2], "sigmoid")
-testnet.show()
-'''
-print(testnet.compute([1,2,6,3]))
-print(testnet.predict([1,2,6,3], [0.586681,0.5205,0.0092704]))
-'''
-inputdata = [[1,2,3,4],
-             [2,1,4,4],
-             [3,3,1,2],
-             [4,4,1,3],
-             [2,1,3,4],
-             [6,1,4,2],
-             [1,2,3,6]]
-label = [[0.2,0.3],
-         [1.1,2.2],
-         [3.2,0.055],
-         [0.44,0.02],
-         [0.033,0.0001],
-         [0.123,0.00456],
-         [0.1,0.2]]
-testnet.testaccuracy(inputdata, label)
-print(testnet.accuracy)
